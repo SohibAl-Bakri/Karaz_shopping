@@ -49,20 +49,20 @@ class CustomDrawer extends StatelessWidget {
     }
 
     return Drawer(
-      backgroundColor: AppColors.blueGrey2,
+      backgroundColor: AppColors.somo3,
       child: SingleChildScrollView(
         child: Column(
           children: [
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(
-                color: AppColors.blueGrey3,
+                color: AppColors.somo2,
                 borderRadius: const BorderRadius.only(
                     bottomRight: Radius.circular(15),
                     bottomLeft: Radius.circular(15)),
               ),
               currentAccountPicture: Container(
                 decoration: BoxDecoration(
-                  color: AppColors.somo2,
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(100),
                 ),
                 child: const Padding(
@@ -79,14 +79,14 @@ class CustomDrawer extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.somo,
+                  color: AppColors.blueGrey3,
                 ),
               ),
               accountEmail: Text(
                 'user@exmple.com',
                 style: TextStyle(
                   fontSize: 15,
-                  color: AppColors.somo,
+                  color: AppColors.blueGrey3,
                 ),
               ),
             ),

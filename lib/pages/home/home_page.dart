@@ -19,13 +19,14 @@ class _HomePageState extends State<HomePage> {
       appBar: const CustomAppBar(),
       drawer: const CustomDrawer(),
       body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topRight,
-            end: Alignment.bottomLeft,
-            colors: AppColors.mixList,
-          ),
-        ),
+        color: Colors.white10,
+        // decoration: BoxDecoration(
+        //   gradient: LinearGradient(
+        //     begin: Alignment.topRight,
+        //     end: Alignment.bottomLeft,
+        //     colors: AppColors.mixList,
+        //   ),
+        // ),
         width: double.infinity,
         height: double.infinity,
         child: SingleChildScrollView(

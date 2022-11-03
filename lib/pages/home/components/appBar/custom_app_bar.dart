@@ -7,7 +7,11 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: AppColors.somo4,
+      backgroundColor: AppColors.somo3,
+      shape: const RoundedRectangleBorder(
+          borderRadius: BorderRadius.only(
+              bottomRight: Radius.circular(25),
+              bottomLeft: Radius.circular(25))),
       iconTheme: IconThemeData(color: AppColors.blueGrey3),
       title: Text(
         'Home Page',
