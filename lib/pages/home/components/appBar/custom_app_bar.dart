@@ -21,9 +21,14 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         IconButton(
           color: AppColors.blueGrey3,
-          icon: const Icon(Icons.shopping_cart_outlined),
+          icon: const Icon(Icons.chat_outlined),
           onPressed: () {},
         ),
+        // IconButton(
+        //   color: AppColors.blueGrey3,
+        //   icon: const Icon(Icons.shopping_cart_outlined),
+        //   onPressed: () {},
+        // ),
       ],
     );
   }

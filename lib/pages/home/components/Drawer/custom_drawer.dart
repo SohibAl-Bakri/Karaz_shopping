@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:karaz/Themes/app_colors.dart';
+import 'package:karaz/pages/products/add_product.dart';
 
 class CustomDrawer extends StatelessWidget {
   const CustomDrawer({super.key});
@@ -49,7 +50,8 @@ class CustomDrawer extends StatelessWidget {
     }
 
     return Drawer(
-      backgroundColor: AppColors.somo3,
+      //backgroundColor: AppColors.somo3,
+      elevation: 0,
       child: SingleChildScrollView(
         child: Column(
           children: [
@@ -89,6 +91,26 @@ class CustomDrawer extends StatelessWidget {
                   color: AppColors.blueGrey3,
                 ),
               ),
+            ),
+            InkWell(
+              child: const ListTile(
+                title: Text('Dashboard'),
+                leading: Icon(Icons.dashboard_rounded),
+              ),
+              onTap: () {},
+            ),
+            InkWell(
+              child: const ListTile(
+                title: Text('Add Product'),
+                leading: Icon(Icons.cloud_upload_outlined),
+              ),
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(
+                  builder: (context) {
+                    return const AddProduct();
+                  },
+                ));
+              },
             ),
             InkWell(
               child: const ListTile(
